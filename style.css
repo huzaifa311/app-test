@@ -1,0 +1,124 @@
+.grid-cols-15 {
+    grid-template-columns: repeat(15, minmax(0, 1fr));
+  }
+  
+  .col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+  
+  .slide-toggle {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .slide-toggle.open {
+    max-height: 500px;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("assets/Poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("assets/Poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("assets/Poppins/Poppins-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("assets/Poppins/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("assets/Poppins/Poppins-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("assets/Poppins/Poppins-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("assets/Poppins/Poppins-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("assets/Poppins/Poppins-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: "Poppins" !important;
+  }
+  
+  .bar1,
+  .bar2,
+  .bar3_h,
+  .bar4 {
+    width: 28px;
+    height: 2px;
+    border-radius: 30px;
+    transition: 0.4s;
+    position: relative;
+  }
+  
+  .bar1 {
+    margin-bottom: 8px;
+  }
+  
+  .bar2 {
+    position: absolute;
+  }
+  
+  .bar4 {
+    margin-top: 8px;
+  }
+  
+  .barContainer.open .bar1 {
+    opacity: 0;
+    width: 30px;
+  }
+  
+  .barContainer.open .bar2 {
+    transform: rotate(45deg);
+  }
+  
+  .barContainer.open .bar3_h {
+    transform: rotate(-45deg);
+  }
+  
+  .barContainer.open .bar4 {
+    opacity: 0;
+    width: 30px;
+  }
+  
+  
+  @media(max-width: 500px){
+      body{
+          background-color: #181921 !important;
+      }
+  }
